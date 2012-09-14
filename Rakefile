@@ -25,10 +25,14 @@ end
 desc 'Updates the app to the last commit in the master branch'
 task :deploy do
   Net::SSH.start(HOST, USER) do |ssh|
-    out =  ssh.exec!("cd #{APP_DIR}/current && git pull origin master").to_s
-    out << ssh.exec!("touch #{APP_DIR}/current/tmp/restart.txt").to_s
+    commands = [
+      "cd #{APP_DIR}/current",
+      'git pull origin master',
+      'bundle install --without development test',
+      'touch tmp/restart.txt'
+    ]
 
-    puts out
+    puts ssh.exec!(commands.join(' && ')).to_s
   end
 end
 

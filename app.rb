@@ -18,17 +18,23 @@ Cuba.use Rack::Static,
 require 'redcarpet'
 require 'sass'
 
+APP_LAYOUT = './content/layout.html.erb'
+
 Cuba.define do
   on get do
     on root do
-      res.write render(
-        './content/layout.html.erb', content_file: 'home.html.erb'
-      )
+      res.write render(APP_LAYOUT, content_file: 'home.html.erb')
     end
 
     on 'styles', extension('css') do |file|
       res.headers['Content-Type'] = 'text/css; charset=utf-8'
       res.write render("./styles/#{file}.scss")
+    end
+
+    ['mawidabp', 'mawidaqa', 'libreduca'].each do |product|
+      on product do
+        res.write render(APP_LAYOUT, content_file: "#{product}.html.erb")
+      end
     end
   end
 end
