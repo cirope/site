@@ -28,7 +28,7 @@ task :deploy do
     commands = [
       "cd #{APP_DIR}/current",
       'git pull origin master',
-      'bundle install --without development test',
+      'bundle install --deployment --without development test',
       'touch tmp/restart.txt'
     ]
 

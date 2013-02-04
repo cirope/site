@@ -3,7 +3,9 @@ ENV['RACK_ENV'] ||= 'development'
 require 'cuba'
 
 require 'rack/protection'
-Cuba.use Rack::Session::Cookie
+Cuba.use Rack::Session::Cookie,
+  key: 'cirope.com',
+  secret: 'fhsdghsfdlgsdkjhfdiguhawgkjhecjhdskjashdafewt'
 Cuba.use Rack::Protection
 Cuba.use Rack::Protection::RemoteReferrer
 

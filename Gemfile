@@ -10,9 +10,9 @@ gem 'tilt'
 
 group :development do
   gem 'guard-rack'
+  gem 'rb-inotify', '~> 0.8.8'
   gem 'net-ssh'
   gem 'puma'
-  gem 'rb-inotify'
 end
 
 group :test do
