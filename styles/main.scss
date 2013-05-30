@@ -1,90 +1,14 @@
+.main-header{
+  padding: 1em 0em 4em;
+}
+
 .footer {
-  margin-top: 45px;
-  padding: 35px 0 36px;
+  margin-top: 2em;
+  padding: 1em 0em;
   border-top: 1px solid #e5e5e5;
 
   p {
     margin-bottom: 0;
     color: #555;
-  }
-}
-
-.jumbotron {
-  position: relative;
-
-  h1 {
-    margin-bottom: 9px;
-    font-size: 81px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  p {
-    margin-bottom: 18px;
-    font-weight: 300;
-  }
-}
-
-.marketing {  
-  h1 {
-    margin: 36px 0 27px;
-    font-size: 40px;
-    font-weight: 300;
-    text-align: center;
-  }
-
-  h2, h3 {
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  p {
-    margin-right: 10px;
-  }
-
-  .row {
-    margin-bottom: 9px;
-  }
-}
-
-.marketing-byline {
-  margin: -18px 0 27px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-  color: #999;
-  text-align: center;
-}
-
-.masthead {
-  padding-top: 36px;
-  margin-bottom: 72px;
-  
-  h1, p {
-    text-align: center;
-  }
-
-  h1 {
-    margin-bottom: 18px;
-  }
-
-  p {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 30px;
-    line-height: 36px;
-  }
-}
-
-.subhead {
-  padding: 36px 0px 0px 0px;
-  margin-bottom: 9px;
-
-  h1 {
-    font-size: 54px;
   }
 }

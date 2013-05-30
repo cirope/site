@@ -1,23 +1,36 @@
-<div>
-  <header class="jumbotron masthead">
-    <h1>Cirope</h1>
-    <p>
+<%= render './content/navbar.html.erb', active: 'home' %>
+
+<div class="main-header page-header">
+  <header>
+    <div class="text-center">
+      <img src="/images/logo.png" alt="Cirope" width="300" height="70">
+    </div>
+
+    <h2 class="text-center">
       Aplicaciones simples y disfrutables, pensadas por y para personas
-    </p>
+    </h2>
   </header>
 </div>
 
-<hr />
-
-<div class="marketing">
-  <h1>Nuestro trabajo</h1>
-  <p class="marketing-byline">
+<div>
+  <h3 class="text-center">Nuestro trabajo</h3>
+  <p class="text-muted text-center">
     Aplicaciones web sin frustraciones, para colaborar, compartir información
     y tomar decisiones
   </p>
 
   <div class="row">
-    <div class="span4">
+    <div class="col col-lg-4">
+      <h2><a href="/libreduca" title="Libreduca">Libreduca</a></h2>
+      <p>
+        Mejore la comunicación de su comunidad educativa, comparta contenidos
+        y colecte datos para mejorar
+      </p>
+      <p>
+        <a href="mailto:soporte@libreduca.com">soporte@libreduca.com</a>
+      </p>
+    </div>
+    <div class="col col-lg-4">
       <h2><a href="/mawidabp" title="Mawida bp">Mawida <em>bp</em></a></h2>
       <p>
         Defina y revise sus buenas prácticas, colabore para implementarlas y
@@ -27,7 +40,7 @@
         <a href="mailto:soporte@mawidabp.com">soporte@mawidabp.com</a>
       </p>
     </div>
-    <div class="span4">
+    <div class="col col-lg-4">
       <h2><a href="/mawidaqa" title="Mawida qa">Mawida <em>qa</em></a></h2>
       <p>
         Administre sus documentos, planifique sus capacitaciones y organize sus
@@ -35,16 +48,6 @@
       </p>
       <p>
         <a href="mailto:soporte@mawidaqa.com">soporte@mawidaqa.com</a>
-      </p>
-    </div>
-    <div class="span4">
-      <h2><a href="/libreduca" title="Libreduca">Libreduca</a></h2>
-      <p>
-        Mejore la comunicación de su comunidad educativa, comparta contenidos
-        y colecte datos para mejorar
-      </p>
-      <p>
-        <a href="mailto:soporte@libreduca.com">soporte@libreduca.com</a>
       </p>
     </div>
   </div>

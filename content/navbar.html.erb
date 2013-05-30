@@ -1,0 +1,16 @@
+<div class="navbar">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <a href="/" class="navbar-brand">Cirope</a>
+  <div class="nav-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li <%= 'class="active"' if active == 'libreduca' %>><a href="/libreduca">Libreduca</a></li>
+      <li <%= 'class="active"' if active == 'mawidabp' %>><a href="/mawidabp">Mawida bp</a></li>
+      <li <%= 'class="active"' if active == 'mawidaqa' %>><a href="/mawidaqa">Mawida qa</a></li>
+    </ul>
+  </div>
+</div>
