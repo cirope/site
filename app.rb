@@ -22,6 +22,8 @@ require 'sass'
 
 APP_LAYOUT = './content/layout.html.erb'
 
+Encoding.default_external = 'UTF-8' # Use UTF-8 for all I/O (remove in Ruby 2)
+
 Cuba.define do
   on get do
     on root do
