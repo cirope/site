@@ -7,7 +7,7 @@ end
 
 HOST='www.cirope.com'
 USER='deployer'
-APP_DIR='/var/rack/cirope-site'
+APP_DIR='/home/deployer/apps/cirope-site'
 REPO='https://github.com/cirope/cirope-site.git'
 
 require 'net/ssh'
