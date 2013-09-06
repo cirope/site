@@ -28,6 +28,8 @@ task :deploy do
     commands = [
       "cd #{APP_DIR}/current",
       'git pull origin master',
+      'export PATH="$HOME/.rbenv/bin:$PATH"',
+      'eval "$(rbenv init -)"',
       'bundle install --deployment --without development test',
       'touch tmp/restart.txt'
     ]
