@@ -7,6 +7,7 @@ gem 'rack-protection'
 gem 'redcarpet'
 gem 'sass'
 gem 'tilt'
+gem 'unicorn'
 
 gem 'capistrano'
 gem 'capistrano-bundler'
