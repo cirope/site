@@ -18,7 +18,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      run '/etc/init.d/unicorn upgrade'
+      execute '/etc/init.d/unicorn upgrade'
     end
   end
 
