@@ -2,3 +2,4 @@
 .bundle/
 .guard-rack-development.pid
 .sass-cache/
+log/*

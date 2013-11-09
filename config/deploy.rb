@@ -6,7 +6,7 @@ set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :deploy_via, :remote_cache
 set :scm, :git
 
-set :linked_dirs, %w{bin}
+set :linked_dirs, %w{bin log}
 
 set :rbenv_type, :user
 set :rbenv_ruby, '2.0.0-p247'
