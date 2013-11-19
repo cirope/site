@@ -2,6 +2,9 @@ set :application, 'cirope.com'
 set :user, 'deployer'
 set :repo_url, 'https://github.com/cirope/cirope-site.git'
 
+set :format, :pretty
+set :log_level, :info
+
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_via, :remote_cache
 set :scm, :git
