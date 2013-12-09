@@ -11,7 +11,7 @@ gem 'unicorn'
 
 gem 'capistrano'
 gem 'capistrano-bundler'
-gem 'capistrano-rbenv', github: 'capistrano/rbenv'
+gem 'capistrano-rbenv'
 
 group :development do
   gem 'guard-rack'
