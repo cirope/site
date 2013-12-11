@@ -5,7 +5,7 @@ require 'cuba'
 require 'rack/protection'
 Cuba.use Rack::Session::Cookie,
   key: 'cirope.com',
-  secret: 'fhsdghsfdlgsdkjhfdiguhawgkjhecjhdskjashdafewt'
+  secret: '04bd222a490a44b351e4bc9fc9ae0e2a572a03707a2760eaaf536aaba9cb15d74f60451e84d8b8ebf4fd138a6e363b1eedf2d5b56d430f5f570774da1c3feb8d'
 Cuba.use Rack::Protection
 Cuba.use Rack::Protection::RemoteReferrer
 
@@ -22,12 +22,12 @@ require 'sass'
 
 APP_LAYOUT = './content/layout.html.erb'
 
-Encoding.default_external = 'UTF-8' # Use UTF-8 for all I/O (remove in Ruby 2)
-
 Cuba.define do
   on get do
     on root do
-      res.write render(APP_LAYOUT, content_file: 'home.html.erb')
+      res.write render(
+        APP_LAYOUT, title: 'Aplicaciones simples', content_file: 'home.html.erb'
+      )
     end
 
     on 'styles', extension('css') do |file|
@@ -35,9 +35,15 @@ Cuba.define do
       res.write render("./styles/#{file}.scss")
     end
 
-    ['mawidabp', 'mawidaqa', 'libreduca'].each do |product|
+    {
+      'mawidabp'  => 'Mawida BP',
+      'mawidaqa'  => 'Mawida QA',
+      'libreduca' => 'Libreduca'
+    }.each do |product, title|
       on product do
-        res.write render(APP_LAYOUT, content_file: "#{product}.html.erb")
+        res.write render(
+          APP_LAYOUT, title: title, content_file: "#{product}.html.erb"
+        )
       end
     end
   end

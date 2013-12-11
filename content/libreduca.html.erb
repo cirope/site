@@ -1,49 +1,23 @@
 <%= render './content/navbar.html.erb', active: 'libreduca' %>
 
 <div class="container">
-  <div>
+  <div class="jumbotron">
     <header>
-      <h1>Libreduca</h1>
-      <p class="lead">
-        Extienda y comparta su conocimiento...
-      </p>
+      <h1>
+        Libreduca <small>Comparta el conocimiento</small>
+      </h1>
     </header>
 
-    <div class="row">
-      <div class="col-lg-4">
-        <h2>Grande</h2>
-        <div class="well">
-          <ul>
-            <li>2000 usuarios</li>
-            <li>Cursos ilimitados</li>
-            <li>50GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn-primary disabled">Pronto</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <h2>Mediano</h2>
-        <div class="well">
-          <ul>
-            <li>250 usuarios</li>
-            <li>Hasta 50 cursos</li>
-            <li>10GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn-primary disabled">Pronto</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <h2>Pequeño</h2>
-        <div class="well">
-          <ul>
-            <li>50 usuarios</li>
-            <li>Hasta 10 cursos</li>
-            <li>5GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn-primary disabled">Pronto</a>
-        </div>
-      </div>
-    </div>
+    <p>
+      <strong>Extienda</strong> y socialice el conocimiento.
+      Cree cursos, interactúe mediante foros, genere tareas y más.
+    </p>
+
+    <br />
+
+    <p>
+      <a href="https://www.libreduca.com" class="btn btn-lg btn-primary" role="button">Ingresar</a>
+    </p>
   </div>
 
   <%= render './content/footer.html.erb' %>
