@@ -36,8 +36,8 @@ Cuba.define do
     end
 
     {
-      'mawidabp'  => 'Mawida BP',
-      'mawidaqa'  => 'Mawida QA',
+      'mawidabp'  => 'Mawidabp',
+      'mawidaqa'  => 'Mawidaqa',
       'libreduca' => 'Libreduca'
     }.each do |product, title|
       on product do
