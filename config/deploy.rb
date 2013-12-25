@@ -12,7 +12,7 @@ set :scm, :git
 set :linked_dirs, %w{log}
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.0.0-p353'
+set :rbenv_ruby, '2.1.0'
 
 set :keep_releases, 5
 
