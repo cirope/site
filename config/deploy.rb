@@ -1,6 +1,6 @@
 set :application, 'cirope.com'
 set :user, 'deployer'
-set :repo_url, 'https://github.com/cirope/cirope-site.git'
+set :repo_url, 'https://github.com/cirope/site.git'
 
 set :format, :pretty
 set :log_level, :info
