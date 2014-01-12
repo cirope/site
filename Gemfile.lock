@@ -11,10 +11,10 @@ GEM
     capistrano-bundler (1.1.1)
       capistrano (~> 3.0)
       sshkit (>= 1.2.0)
-    capistrano-rbenv (2.0.0)
+    capistrano-rbenv (2.0.1)
       capistrano (~> 3.0)
-      sshkit (~> 1.2.0)
-    capybara (2.2.0)
+      sshkit (~> 1.3)
+    capybara (2.2.1)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
@@ -51,7 +51,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.0)
     mini_portile (0.5.2)
-    minitest (5.2.0)
+    minitest (5.2.1)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
@@ -68,7 +68,7 @@ GEM
       rack (>= 1.0)
     raindrops (0.12.0)
     rake (10.1.1)
-    rb-fsevent (0.9.3)
+    rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
@@ -78,7 +78,7 @@ GEM
     slop (3.4.7)
     spoon (0.0.4)
       ffi
-    sshkit (1.2.0)
+    sshkit (1.3.0)
       net-scp (>= 1.1.2)
       net-ssh
       term-ansicolor
@@ -87,7 +87,7 @@ GEM
     thor (0.18.1)
     tilt (2.0.0)
     tins (0.13.1)
-    unicorn (4.7.0)
+    unicorn (4.8.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -101,7 +101,7 @@ DEPENDENCIES
   bourbon
   capistrano
   capistrano-bundler
-  capistrano-rbenv (~> 2.0)
+  capistrano-rbenv
   capybara
   cuba
   cutest

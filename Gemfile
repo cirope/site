@@ -18,7 +18,7 @@ group :development do
   gem 'rake'
   gem 'capistrano'
   gem 'capistrano-bundler'
-  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-rbenv'
 end
 
 group :test do
