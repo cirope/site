@@ -5,7 +5,7 @@ app_path = File.expand_path(File.dirname(__FILE__) + '/../../current')
 
 # Use at least one worker per core if you're on a dedicated server,
 # more will usually help for _short_ waits on databases/caches.
-worker_processes 4
+worker_processes 2
 
 # Load rails into the master before forking workers for super-fast
 # worker spawn times
@@ -15,22 +15,18 @@ preload_app true
 # "current" directory that Capistrano sets up.
 working_directory app_path
 
-listen '/tmp/unicorn.sock', backlog: 1024
+listen '/tmp/unicorn_cirope_site.sock', backlog: 1024
 
 # nuke workers after 60 seconds
 timeout 60
 
-pid '/tmp/unicorn.pid'
+pid '/tmp/unicorn_cirope_site.pid'
 
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
 stderr_path "#{app_path}/log/unicorn.stderr.log"
 stdout_path "#{app_path}/log/unicorn.stdout.log"
-
-# combine Ruby 2.0.0dev or REE with "preload_app true" for memory savings
-# http://rubyenterpriseedition.com/faq.html#adapt_apps_for_cow
-preload_app true
 
 GC.respond_to?(:copy_on_write_friendly=) and
   GC.copy_on_write_friendly = true
