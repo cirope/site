@@ -26,7 +26,7 @@ GEM
       celluloid (>= 0.15.0)
       nio4r (>= 0.5.0)
     coderay (1.1.0)
-    cuba (3.1.0)
+    cuba (3.1.1)
       rack
     cutest (1.2.1)
     erubis (2.7.0)
@@ -79,7 +79,7 @@ GEM
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
     redcarpet (3.1.1)
-    sass (3.2.14)
+    sass (3.3.1)
     slop (3.4.7)
     spoon (0.0.4)
       ffi
