@@ -10,6 +10,7 @@ Cuba.use Rack::Protection
 Cuba.use Rack::Protection::RemoteReferrer
 
 require 'cuba/render'
+require 'erb'
 Cuba.plugin Cuba::Render
 
 Cuba.use Rack::Static,
@@ -20,31 +21,15 @@ Cuba.use Rack::Static,
 require 'redcarpet'
 require 'sass'
 
-APP_LAYOUT = './content/layout.html.erb'
-
 Cuba.define do
   on get do
     on root do
-      res.write render(
-        APP_LAYOUT, title: 'Aplicaciones simples', content_file: 'home.html.erb'
-      )
+      render 'home.html'
     end
 
     on 'styles', extension('css') do |file|
       res.headers['Content-Type'] = 'text/css; charset=utf-8'
       res.write render("./styles/#{file}.scss")
-    end
-
-    {
-      'mawidabp'  => 'Mawidabp',
-      'mawidaqa'  => 'Mawidaqa',
-      'libreduca' => 'Libreduca'
-    }.each do |product, title|
-      on product do
-        res.write render(
-          APP_LAYOUT, title: title, content_file: "#{product}.html.erb"
-        )
-      end
     end
   end
 end
