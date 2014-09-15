@@ -2,10 +2,8 @@ source 'https://rubygems.org/'
 
 gem 'cuba'
 
-gem 'bourbon'
 gem 'rack-protection'
 gem 'redcarpet'
-gem 'sass'
 gem 'tilt'
 gem 'erubis'
 

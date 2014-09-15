@@ -10,26 +10,16 @@ Cuba.use Rack::Protection
 Cuba.use Rack::Protection::RemoteReferrer
 
 require 'cuba/render'
-require 'erb'
 Cuba.plugin Cuba::Render
 
 Cuba.use Rack::Static,
   root: 'public',
   urls: ['/js', '/images', '/css']
 
-# Require to avoid tilt autoload multi-thread problems
-require 'redcarpet'
-require 'sass'
-
 Cuba.define do
   on get do
     on root do
       render 'home.html'
-    end
-
-    on 'styles', extension('css') do |file|
-      res.headers['Content-Type'] = 'text/css; charset=utf-8'
-      res.write render("./styles/#{file}.scss")
     end
   end
 end
