@@ -7,7 +7,6 @@ set :log_level, :info
 
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_via, :remote_cache
-set :scm, :git
 
 set :linked_dirs, %w{log}
 
