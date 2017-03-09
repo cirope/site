@@ -32,7 +32,7 @@ GEM
     cutest (1.2.3)
       clap
     erubis (2.7.0)
-    ffi (1.9.17)
+    ffi (1.9.18)
     formatador (0.2.5)
     guard (2.14.1)
       formatador (>= 0.2.4)
@@ -123,4 +123,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.14.5
+   1.14.6
