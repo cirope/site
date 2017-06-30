@@ -3,9 +3,9 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
-    airbrussh (1.2.0)
+    airbrussh (1.3.0)
       sshkit (>= 1.6.1, != 1.7.0)
-    capistrano (3.8.1)
+    capistrano (3.8.2)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -16,7 +16,7 @@ GEM
     capistrano-rbenv (2.1.1)
       capistrano (~> 3.1)
       sshkit (~> 1.3)
-    capybara (2.14.0)
+    capybara (2.14.4)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -25,7 +25,7 @@ GEM
       xpath (~> 2.0)
     clap (1.0.0)
     coderay (1.1.1)
-    cuba (3.8.0)
+    cuba (3.8.1)
       rack (>= 1.6.0)
     cutest (1.2.3)
       clap
@@ -45,7 +45,7 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
-    i18n (0.8.1)
+    i18n (0.8.4)
     kgio (2.11.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -56,14 +56,14 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.2.0)
     minitest (5.10.2)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
-    nokogiri (1.7.2)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -79,9 +79,9 @@ GEM
       rack (>= 1.0)
     raindrops (0.18.0)
     rake (12.0.0)
-    rb-fsevent (0.9.8)
-    rb-inotify (0.9.8)
-      ffi (>= 0.5.0)
+    rb-fsevent (0.10.1)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
     ruby_dep (1.5.0)
     shellany (0.0.1)
@@ -96,7 +96,7 @@ GEM
     unicorn (5.3.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
-    xpath (2.0.0)
+    xpath (2.1.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
@@ -121,4 +121,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.14.6
+   1.15.1
