@@ -11,7 +11,7 @@ set :deploy_via, :remote_cache
 set :linked_dirs, %w{log}
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.5.0'
+set :rbenv_ruby, '2.5.1'
 
 set :keep_releases, 5
 
