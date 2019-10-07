@@ -6,7 +6,7 @@ Here is the soul of the Cirope's website
 
 ### (The MIT License)
 
-Copyright (c) 2008-2016 Cirope S.A.
+Copyright (c) 2008-2019 Cirope S.A.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
