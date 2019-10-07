@@ -1,7 +1,7 @@
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
 # documentation.
 
-app_path = File.expand_path(File.dirname(__FILE__) + '/../../current')
+app_path = File.expand_path(File.dirname(__FILE__) + '/..')
 
 # Use at least one worker per core if you're on a dedicated server,
 # more will usually help for _short_ waits on databases/caches.
@@ -15,18 +15,18 @@ preload_app true
 # "current" directory that Capistrano sets up.
 working_directory app_path
 
-listen '/run/unicorn/unicorn.sock', backlog: 1024
+listen 3000
 
-# nuke workers after 60 seconds
-timeout 60
+# nuke workers after 30 seconds
+timeout 30
 
 pid '/tmp/unicorn.pid'
 
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
-stderr_path "#{app_path}/log/unicorn.stderr.log"
-stdout_path "#{app_path}/log/unicorn.stdout.log"
+# stderr_path "#{app_path}/log/unicorn.stderr.log"
+# stdout_path "#{app_path}/log/unicorn.stdout.log"
 
 GC.respond_to?(:copy_on_write_friendly=) and
   GC.copy_on_write_friendly = true
