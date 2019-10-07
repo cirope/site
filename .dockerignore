@@ -1,0 +1,5 @@
+.bundle
+.git
+.guard-rack-development.pid
+.sass-cache/
+log/
