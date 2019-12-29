@@ -2,6 +2,6 @@ language: ruby
 cache: bundler
 sudo: false
 rvm:
-  - 2.5.1
+  - 2.7.0
 before_install:
-  - 'gem install bundler'
+  - 'gem install bundler --force --no-document'
